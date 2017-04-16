@@ -74,6 +74,17 @@ nnoremap k gk
 
 " per filetype preferences
 autocmd FileType ruby setlocal tabstop=2 shiftwidth=2 softtabstop=2
+autocmd FileType html setlocal tabstop=2 shiftwidth=2 softtabstop=2
+autocmd FileType js setlocal tabstop=2 shiftwidth=2 softtabstop=2
+autocmd FileType css setlocal tabstop=2 shiftwidth=2 softtabstop=2
+
+function! Indent2()
+  setlocal tabstop=2 shiftwidth=2 softtabstop=2
+endfun
+
+function! Indent4()
+  setlocal tabstop=4 shiftwidth=4 softtabstop=4
+endfun
 
 " open files to last position
 autocmd BufReadPost *
