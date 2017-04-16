@@ -109,7 +109,7 @@ let g:ctrlp_working_path_mode = 0
 let g:ctrlp_user_command = 'rg --files %s'
 
 let g:ctrlp_prompt_mappings = {
-  \   'AcceptSelection("e")': [],
+  \   'AcceptSelection("e")': ['<c-t>'],
   \   'AcceptSelection("t")': ['<cr>', '<c-m>'],
   \ }
 
