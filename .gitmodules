@@ -10,9 +10,6 @@
 [submodule "bundle/sensible"]
 	path = bundle/sensible
 	url = git@github.com:tpope/vim-sensible.git
-[submodule "bundle/nerdtree-tabs"]
-	path = bundle/nerdtree-tabs
-	url = git@github.com:jistr/vim-nerdtree-tabs.git
 [submodule "bundle/gitgutter"]
 	path = bundle/gitgutter
 	url = git@github.com:airblade/vim-gitgutter.git
