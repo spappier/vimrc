@@ -154,15 +154,6 @@ highlight clear ALEWarningSign
 nmap , <Plug>(ale_next_wrap)
 
 
-""" nerdtree
-
-let NERDTreeMapActivateNode='<right>'
-let NERDTreeIgnore=['\.pyc$', '\~$']
-
-nmap <leader>n :NERDTreeToggle<cr>
-nmap <leader>f :NERDTreeFind<cr>
-
-
 """ gitgutter
 
 let g:gitgutter_sign_column_always=1
