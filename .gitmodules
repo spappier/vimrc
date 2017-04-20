@@ -31,3 +31,6 @@
 [submodule "bundle/rust"]
 	path = bundle/rust
 	url = git@github.com:rust-lang/rust.vim.git
+[submodule "bundle/jedi"]
+	path = bundle/jedi
+	url = git@github.com:davidhalter/jedi-vim.git
