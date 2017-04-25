@@ -34,3 +34,6 @@
 [submodule "bundle/jedi"]
 	path = bundle/jedi
 	url = git@github.com:davidhalter/jedi-vim.git
+[submodule "bundle/nginx"]
+	path = bundle/nginx
+	url = git@github.com:vim-scripts/nginx.vim
