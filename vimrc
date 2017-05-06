@@ -34,9 +34,6 @@ let mapleader = " "
 " open previous file
 nnoremap <leader>e :e#<cr>
 
-" quick save
-nmap <leader>w :w!<cr>
-
 " quick close
 nmap q :q<cr>
 
@@ -57,6 +54,9 @@ map 0 ^
 
 " Y consistent with D and C
 map Y y$
+
+" W mishit
+:command W w
 
 " tab switching
 nnoremap <s-right> :tabn<cr>
