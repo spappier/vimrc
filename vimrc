@@ -77,6 +77,7 @@ autocmd FileType ruby setlocal tabstop=2 shiftwidth=2 softtabstop=2
 autocmd FileType html setlocal tabstop=2 shiftwidth=2 softtabstop=2
 autocmd FileType js setlocal tabstop=2 shiftwidth=2 softtabstop=2
 autocmd FileType css setlocal tabstop=2 shiftwidth=2 softtabstop=2
+autocmd BufRead docker-compose.yml* setlocal tabstop=2 shiftwidth=2 softtabstop=2
 autocmd BufRead nginx.conf* setfiletype nginx
 
 function! Indent2()
