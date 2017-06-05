@@ -34,17 +34,8 @@ let mapleader = " "
 " open previous file
 nnoremap <leader>e :e#<cr>
 
-" quick close
-nmap q :q<cr>
-
-" unhighlight search results
-nmap <leader><esc> :noh<cr>
-
 " reload config
 map <leader>r :source ~/.vimrc<cr>
-
-" copy last yank to clipboard
-nmap <leader>c :call system('xclip -selection clipboard', @0)<cr>
 
 " paste over selection without overwriting register
 vnoremap p "_dP
@@ -56,7 +47,10 @@ map 0 ^
 map Y y$
 
 " W mishit
-:command W w
+:command! W w
+
+" shortcut to usual macro
+nnoremap <leader>q @q
 
 " tab switching
 nnoremap <s-right> :tabn<cr>
@@ -93,9 +87,6 @@ autocmd BufReadPost *
   \ if line("'\"") > 0 && line("'\"") <= line("$") |
   \   exe "normal! g`\"" |
   \ endif
-
-" toggle line numbers
-nmap <leader>h :set number!<cr>
 
 " move lines
 nnoremap <c-up> :m -2<cr>
@@ -165,8 +156,6 @@ nmap , <Plug>(ale_next_wrap)
 """ gitgutter
 
 let g:gitgutter_sign_column_always=1
-
-nmap <leader>g :GitGutterToggle<cr>
 
 
 """ lightline
