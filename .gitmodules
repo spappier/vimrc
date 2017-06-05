@@ -37,3 +37,6 @@
 [submodule "bundle/nginx"]
 	path = bundle/nginx
 	url = git@github.com:vim-scripts/nginx.vim
+[submodule "bundle/terraform"]
+	path = bundle/terraform
+	url = git@github.com:hashivim/vim-terraform.git
