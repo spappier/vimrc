@@ -71,7 +71,7 @@ autocmd FileType ruby setlocal tabstop=2 shiftwidth=2 softtabstop=2
 autocmd FileType html setlocal tabstop=2 shiftwidth=2 softtabstop=2
 autocmd FileType js setlocal tabstop=2 shiftwidth=2 softtabstop=2
 autocmd FileType css setlocal tabstop=2 shiftwidth=2 softtabstop=2
-autocmd BufRead docker-compose.yml* setlocal tabstop=2 shiftwidth=2 softtabstop=2
+autocmd FileType yml setlocal tabstop=2 shiftwidth=2 softtabstop=2
 autocmd BufRead nginx.conf* setfiletype nginx
 
 function! Indent2()
@@ -155,7 +155,7 @@ nmap , <Plug>(ale_next_wrap)
 
 """ gitgutter
 
-let g:gitgutter_sign_column_always=1
+set signcolumn=yes
 
 
 """ lightline
