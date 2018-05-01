@@ -69,9 +69,11 @@ nnoremap k gk
 " per filetype preferences
 autocmd FileType ruby setlocal tabstop=2 shiftwidth=2 softtabstop=2
 autocmd FileType html setlocal tabstop=2 shiftwidth=2 softtabstop=2
-autocmd FileType js setlocal tabstop=2 shiftwidth=2 softtabstop=2
+autocmd FileType htmldjango setlocal tabstop=2 shiftwidth=2 softtabstop=2
+autocmd FileType javascript setlocal tabstop=2 shiftwidth=2 softtabstop=2
+autocmd FileType json setlocal tabstop=2 shiftwidth=2 softtabstop=2
 autocmd FileType css setlocal tabstop=2 shiftwidth=2 softtabstop=2
-autocmd FileType yml setlocal tabstop=2 shiftwidth=2 softtabstop=2
+autocmd FileType yaml setlocal tabstop=2 shiftwidth=2 softtabstop=2
 
 autocmd BufRead nginx.conf* setfiletype nginx
 autocmd BufRead Dockerfile* setfiletype dockerfile
@@ -153,6 +155,12 @@ highlight clear ALEErrorSign
 highlight clear ALEWarningSign
 
 nmap , <Plug>(ale_next_wrap)
+
+
+""" jedi
+
+let g:jedi#use_tabs_not_buffers = 1
+let g:jedi#popup_on_dot = 0
 
 
 """ gitgutter
